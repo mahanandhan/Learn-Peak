@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Left Side - Logo Fully Left */}
         <div className="flex-1">
           <h1 className="text-3xl font-bold text-blue-500 hover:text-blue-400 transition duration-300 animate-fade-in">
-            Elearn Platform
+            Learn Peek
           </h1>
         </div>
 
