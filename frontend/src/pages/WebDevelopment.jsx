@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const WebDevelopment = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-12">
       {/* Main Title */}
@@ -16,6 +17,9 @@ const WebDevelopment = () => {
           <p className="text-gray-300">
             Learn web development through interactive visuals, video tutorials, and hands-on projects.
           </p>
+          <button onClick={() => navigate('/webdevvl')} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+            </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +28,9 @@ const WebDevelopment = () => {
           <p className="text-gray-300">
             Understand the core principles of web development with in-depth theoretical explanations.
           </p>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

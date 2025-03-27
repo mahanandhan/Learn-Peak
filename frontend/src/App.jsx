@@ -23,6 +23,8 @@ import FullStack from './pages/FullStack'
 import Python from './pages/Python'
 import Java from './pages/Java'
 import SoftwareEngineer from './pages/SoftwareEngineer'
+import AimlVl from './pages/vl/AimlVl'
+import WebDevVl from './pages/vl/WebDevVl'
 const App = () => {
   return (
     <div>
@@ -50,6 +52,8 @@ const App = () => {
         <Route path='/pythonprogramming' element={<Python />} />
         <Route path='javaprogramming' element={<Java />} />
         <Route path='/softwareengineering' element={<SoftwareEngineer />} />
+        <Route path='/aimlvl' element={<AimlVl />} />
+        <Route path='/webdevvl' element={<WebDevVl />} />
       </Routes>
     </div>
   )
