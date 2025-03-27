@@ -40,7 +40,7 @@ const Navbar = () => {
         {/* Right Side - Other Links */}
         <div className="flex gap-6 flex-1 justify-end">
           <Link
-            to="/"
+            to="/signup"
             className="text-lg font-medium text-gray-300 hover:text-blue-400 transition-all duration-300 hover:scale-110"
           >
             Signup
@@ -51,12 +51,7 @@ const Navbar = () => {
           >
             Login
           </Link>
-          <Link
-            to="/dashboard"
-            className="text-lg font-medium text-gray-300 hover:text-blue-400 transition-all duration-300 hover:scale-110"
-          >
-            Dashboard
-          </Link>
+          
           <Link
             to="/profile"
             className="text-lg font-medium text-gray-300 hover:text-blue-400 transition-all duration-300 hover:scale-110"

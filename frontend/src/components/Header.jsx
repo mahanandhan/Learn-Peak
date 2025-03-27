@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import coursesData from "../assets/data"; // ✅ Import the course data
+import { Link } from "react-router-dom";
+import coursesData from "../assets/data";
 
 const Header = () => {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    setCourses(coursesData); // ✅ Load courses from `data.js`
+    setCourses(coursesData);
   }, []);
 
   return (
@@ -24,11 +25,23 @@ const Header = () => {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 cursor-default w-full max-w-xs sm:max-w-sm mx-auto"
+              className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 cursor-pointer w-full max-w-xs sm:max-w-sm mx-auto"
             >
-              <img src={course.image} alt={course.name} className="w-full h-52 object-cover" />
+              <img
+                src={course.image}
+                alt={course.name}
+                className="w-full h-52 object-cover"
+              />
               <div className="p-6 text-center">
-                <h3 className="text-2xl font-semibold text-white">{course.name}</h3>
+                <h3 className="text-2xl font-semibold text-white">
+                  <Link
+                    to={`/${course.name.toLowerCase().replace(/\s+/g, '')}`}
+                    state={course}
+                    className="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-400 transition duration-300 transform hover:scale-105"
+                  >
+                    {course.name}
+                  </Link>
+                </h3>
               </div>
             </div>
           ))}
