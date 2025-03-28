@@ -16,6 +16,7 @@ const ArVr = () => {
           <p className="text-gray-300">
             Dive into immersive environments using AR and VR, visualizing complex concepts with interactive simulations.
           </p>
+          <button className='bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer'>Start Learning</button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +25,7 @@ const ArVr = () => {
           <p className="text-gray-300">
             Understand the underlying principles of augmented and virtual reality, including 3D modeling, sensors, and spatial computing.
           </p>
+          <button className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer'>Start Learning</button>
         </div>
       </div>
     </div>

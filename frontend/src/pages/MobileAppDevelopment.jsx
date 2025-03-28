@@ -16,6 +16,9 @@ const MobileAppDevelopment = () => {
           <p className="text-gray-300">
             Explore mobile app development concepts through interactive visuals and app-building tutorials.
           </p>
+          <button className="bg-pink-500 hover:bg-pink-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const MobileAppDevelopment = () => {
           <p className="text-gray-300">
             Dive into the underlying principles of mobile app development, covering frameworks, tools, and best practices.
           </p>
+          <button className="bg-yellow-500 hover:bg-yellow-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

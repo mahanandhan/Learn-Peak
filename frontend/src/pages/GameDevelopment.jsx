@@ -16,6 +16,9 @@ const GameDevelopment = () => {
           <p className="text-gray-300">
             Learn the principles of game design, engine programming, and interactive 3D visuals through immersive tutorials.
           </p>
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const GameDevelopment = () => {
           <p className="text-gray-300">
             Understand the core concepts behind game physics, algorithms, and storytelling to build immersive experiences.
           </p>
+          <button className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

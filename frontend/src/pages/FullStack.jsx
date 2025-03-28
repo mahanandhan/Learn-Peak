@@ -16,6 +16,9 @@ const FullStack = () => {
           <p className="text-gray-300">
             Learn full-stack development with hands-on coding exercises, building projects from frontend to backend.
           </p>
+          <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const FullStack = () => {
           <p className="text-gray-300">
             Understand the core concepts behind full-stack development, including databases, server-side technologies, and client-side frameworks.
           </p>
+          <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

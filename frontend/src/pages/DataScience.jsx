@@ -16,6 +16,9 @@ const DataScience = () => {
           <p className="text-gray-300">
             Dive into data visualization techniques, learn how to interpret graphs, charts, and infographics effectively.
           </p>
+          <button className="bg-fuchsia-400 hover:bg-fuchsia-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+            </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const DataScience = () => {
           <p className="text-gray-300">
             Master statistical analysis, machine learning algorithms, and data modeling principles with a strong theoretical foundation.
           </p>
+          <button className="bg-lime-400 hover:bg-lime-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+            </button>
         </div>
       </div>
     </div>

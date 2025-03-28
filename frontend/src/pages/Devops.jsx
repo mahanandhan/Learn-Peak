@@ -16,6 +16,9 @@ const Devops = () => {
           <p className="text-gray-300">
             Explore DevOps practices with interactive demos, tools, and real-world examples.
           </p>
+          <button className="bg-orange-400 hover:bg-orange-500 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const Devops = () => {
           <p className="text-gray-300">
             Gain in-depth knowledge of continuous integration, continuous delivery, and automation.
           </p>
+          <button className="bg-blue-400 hover:bg-blue-500 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

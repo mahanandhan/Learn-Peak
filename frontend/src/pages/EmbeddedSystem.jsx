@@ -16,6 +16,9 @@ const EmbeddedSystem = () => {
           <p className="text-gray-300">
             Understand the core concepts of embedded systems with visual demonstrations and practical examples.
           </p>
+          <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,7 @@ const EmbeddedSystem = () => {
           <p className="text-gray-300">
             Explore the theoretical foundations of embedded systems, including microcontrollers, sensors, and communication protocols.
           </p>
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer"> Start Learning</button>
         </div>
       </div>
     </div>

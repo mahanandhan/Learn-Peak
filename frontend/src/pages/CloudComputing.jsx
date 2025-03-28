@@ -16,6 +16,9 @@ const CloudComputing = () => {
           <p className="text-gray-300">
             Understand cloud architecture and services through interactive visuals and hands-on examples.
           </p>
+          <button className="bg-pink-500 hover:bg-pink-700 transfrom transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const CloudComputing = () => {
           <p className="text-gray-300">
             Learn the theory behind cloud technologies, networking, storage systems, and distributed computing.
           </p>
+          <button className="bg-yellow-500 hover:bg-yellow-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

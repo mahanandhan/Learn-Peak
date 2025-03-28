@@ -16,6 +16,7 @@ const Iot = () => {
           <p className="text-gray-300">
             Dive into the world of IoT with interactive demonstrations, live simulations, and practical applications.
           </p>
+          <button className='bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer'>Start Learning</button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +25,7 @@ const Iot = () => {
           <p className="text-gray-300">
             Understand the theory behind IoT systems, including sensors, connectivity, cloud computing, and data analysis.
           </p>
+          <button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer'>Start Learning</button>
         </div>
       </div>
     </div>

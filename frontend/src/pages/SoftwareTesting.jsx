@@ -16,6 +16,9 @@ const SoftwareTesting = () => {
           <p className="text-gray-300">
             Learn through real-world examples and interactive tools for software testing practices, including automation, UI testing, and more.
           </p>
+          <button className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const SoftwareTesting = () => {
           <p className="text-gray-300">
             Understand the principles of software testing, quality assurance, and the importance of test-driven development in software projects.
           </p>
+          <button className="bg-teal-400 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

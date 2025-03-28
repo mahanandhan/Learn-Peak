@@ -16,6 +16,9 @@ const CyberSecurity = () => {
           <p className="text-gray-300">
             Explore cybersecurity concepts with interactive visuals, live simulations, and real-world case studies.
           </p>
+          <button className="bg-red-500 hover:bg-red-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+            </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const CyberSecurity = () => {
           <p className="text-gray-300">
             Gain in-depth knowledge of cybersecurity principles, encryption, and risk assessment methodologies.
           </p>
+          <button className="bg-red-500 hover:bg-red-700 transfrom transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+            </button>
         </div>
       </div>
     </div>

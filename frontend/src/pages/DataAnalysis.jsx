@@ -16,6 +16,9 @@ const DataAnalysis = () => {
           <p className="text-gray-300">
             Learn how to use data visualization tools to interpret data through graphs, charts, and real-time data dashboards.
           </p>
+          <button className="bg-orange-500 hover:bg-orange-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const DataAnalysis = () => {
           <p className="text-gray-300">
             Explore the theoretical aspects of data analysis, such as statistical analysis, data modeling, and algorithmic approaches.
           </p>
+          <button className="bg-indigo-500 hover:bg-indigo-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

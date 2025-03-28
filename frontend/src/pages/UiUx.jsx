@@ -16,6 +16,9 @@ const UiUx = () => {
           <p className="text-gray-300">
             Learn how to create beautiful and user-friendly interfaces, focusing on visual design principles and prototyping tools.
           </p>
+          <button className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const UiUx = () => {
           <p className="text-gray-300">
             Dive deep into the theories behind user behavior, user research, and usability to create intuitive and impactful designs.
           </p>
+          <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

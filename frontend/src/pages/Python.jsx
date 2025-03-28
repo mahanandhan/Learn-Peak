@@ -16,6 +16,9 @@ const Python = () => {
           <p className="text-gray-300">
             Dive into Python programming with interactive coding exercises, live demos, and real-world examples.
           </p>
+          <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const Python = () => {
           <p className="text-gray-300">
             Learn the foundational concepts of Python, from variables and data types to object-oriented programming and advanced topics.
           </p>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

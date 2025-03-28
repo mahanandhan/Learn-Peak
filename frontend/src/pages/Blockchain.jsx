@@ -16,6 +16,9 @@ const Blockchain = () => {
           <p className="text-gray-300">
             Explore blockchain concepts through interactive visuals, real-world case studies, and live simulations.
           </p>
+          <button className="bg-teal-500 hover:bg-teal-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+            </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const Blockchain = () => {
           <p className="text-gray-300">
             Gain a solid understanding of blockchain fundamentals, cryptography, and decentralized applications (dApps).
           </p>
+          <button className="bg-indigo-500 hover:bg-indigo-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+            </button>
         </div>
       </div>
     </div>

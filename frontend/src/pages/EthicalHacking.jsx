@@ -16,6 +16,9 @@ const EthicalHacking = () => {
           <p className="text-gray-300">
             Explore ethical hacking techniques with real-world visual tools, hacking simulations, and scenarios.
           </p>
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const EthicalHacking = () => {
           <p className="text-gray-300">
             Dive deep into the concepts of ethical hacking, penetration testing, and cybersecurity principles that drive safe online practices.
           </p>
+          <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>

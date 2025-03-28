@@ -16,6 +16,9 @@ const Java = () => {
           <p className="text-gray-300">
             Learn Java through visual-based tutorials, interactive coding challenges, and real-time debugging sessions.
           </p>
+          <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
 
         {/* Theoretical Learning Section */}
@@ -24,6 +27,9 @@ const Java = () => {
           <p className="text-gray-300">
             Explore in-depth concepts such as Java syntax, object-oriented programming, data structures, and algorithms.
           </p>
+          <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+            Start Learning
+          </button>
         </div>
       </div>
     </div>
