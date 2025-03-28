@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Blockchain = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-12">
       {/* Main Title */}
@@ -16,7 +17,7 @@ const Blockchain = () => {
           <p className="text-gray-300">
             Explore blockchain concepts through interactive visuals, real-world case studies, and live simulations.
           </p>
-          <button className="bg-teal-500 hover:bg-teal-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/blockchainvl')} className="bg-teal-500 hover:bg-teal-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning
             </button>
         </div>

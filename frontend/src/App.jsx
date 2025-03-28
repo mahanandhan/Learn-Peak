@@ -25,6 +25,7 @@ import Java from './pages/Java'
 import SoftwareEngineer from './pages/SoftwareEngineer'
 import AimlVl from './pages/vl/AimlVl'
 import WebDevVl from './pages/vl/WebDevVl'
+import BlockchainVl from './pages/vl/BlockchainVl'
 const App = () => {
   return (
     <div>
@@ -54,6 +55,7 @@ const App = () => {
         <Route path='/softwareengineering' element={<SoftwareEngineer />} />
         <Route path='/aimlvl' element={<AimlVl />} />
         <Route path='/webdevvl' element={<WebDevVl />} />
+        <Route path='/blockchainvl' element={<BlockchainVl />} />
       </Routes>
     </div>
   )
