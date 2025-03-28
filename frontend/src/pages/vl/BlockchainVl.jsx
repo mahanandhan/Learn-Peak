@@ -9,27 +9,74 @@ const BlockchainVl = () => {
       </div>
 
       {/* Project-Based Learning Section */}
-      <div className="bg-gray-800 p-8 rounded-xl shadow-lg space-y-6">
-        <h1 className="text-3xl font-semibold text-blue-400 text-center">
-          Project-Based Learning on Blockchain
-        </h1>
+      <div>
+        <h2 className="text-3xl font-bold text-blue-500">Project-Based Learning on Blockchain</h2>
+      </div>
 
-        {/* Song Application Section */}
-        <div className="bg-gray-700 p-6 rounded-lg shadow-md">
-          <h1 className="text-2xl font-semibold text-green-400 text-center mb-4">
-            Song Application using Blockchain
-          </h1>
-
-          {/* Video Section */}
-          <div className="flex justify-center">
-            <iframe
-              className="w-full md:w-[560px] h-[315px] rounded-lg shadow-md"
-              src="https://www.youtube.com/embed/rp83FIpXyEY"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      {/* Song Application Section */}
+      <div className="bg-gray-800 p-8 rounded-xl shadow-lg space-y-6 mt-8">
+        <h1 className="text-3xl font-semibold text-green-400 text-center">Song Application using Blockchain Which gives understanding</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-gray-700 p-4 rounded-lg">
+            <iframe 
+              className="w-full h-64 rounded-lg" 
+              src="https://www.youtube.com/embed/rp83FIpXyEY" 
+              title="YouTube video" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
-            ></iframe>
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Web3 for Beginners Section */}
+      <div className="bg-gray-800 p-8 rounded-xl shadow-lg mt-12 space-y-6">
+        <h1 className="text-3xl font-semibold text-yellow-400 text-center">Web3 for Beginners To Advance</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-gray-700 p-4 rounded-lg">
+            <iframe 
+              className="w-full h-64 rounded-lg" 
+              src="https://www.youtube.com/embed/wx0Hdgfpku0" 
+              title="YouTube video" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Solidity, Blockchain, and Smart Contract Course Section */}
+      <div className="bg-gray-800 p-8 rounded-xl shadow-lg mt-12 space-y-6">
+        <h1 className="text-3xl font-semibold text-purple-400 text-center">Solidity, Blockchain, and Smart Contract Course Beginner to Expert Python</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-gray-700 p-4 rounded-lg">
+            <iframe 
+              className="w-full h-64 rounded-lg" 
+              src="https://www.youtube.com/embed/M576WGiDBdQ" 
+              title="YouTube video" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* NFT Marketplace Section */}
+      <div className="bg-gray-800 p-8 rounded-xl shadow-lg mt-12 space-y-6">
+        <h1 className="text-3xl font-semibold text-green-400 text-center">NFT Marketplace On Ethereum With React JS</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-gray-700 p-4 rounded-lg">
+            <iframe 
+              className="w-full h-64 rounded-lg" 
+              src="https://www.youtube.com/embed/S3jJtGYI18E" 
+              title="YouTube video" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            />
           </div>
         </div>
       </div>
