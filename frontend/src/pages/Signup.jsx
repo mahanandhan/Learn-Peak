@@ -16,7 +16,7 @@ const Signup = () => {
 
         <form className="flex flex-col gap-5 relative z-10">
           <div className="animate-fade-in">
-            <label className="block text-gray-400 font-medium mb-2 hover:text-blue-500 transition-all duration-300">
+            <label htmlFor="username" className="block text-gray-400 font-medium mb-2 hover:text-blue-500 transition-all duration-300">
               Username:
             </label>
             <input
@@ -28,7 +28,7 @@ const Signup = () => {
           </div>
 
           <div className="animate-fade-in">
-            <label className="block text-gray-400 font-medium mb-2 hover:text-blue-500 transition-all duration-300">
+            <label htmlFor="email" className="block text-gray-400 font-medium mb-2 hover:text-blue-500 transition-all duration-300">
               Email:
             </label>
             <input
@@ -40,7 +40,7 @@ const Signup = () => {
           </div>
 
           <div className="animate-fade-in">
-            <label className="block text-gray-400 font-medium mb-2 hover:text-blue-500 transition-all duration-300">
+            <label htmlFor="password" className="block text-gray-400 font-medium mb-2 hover:text-blue-500 transition-all duration-300">
               Password:
             </label>
             <input
