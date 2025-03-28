@@ -2,7 +2,7 @@ import AiImage from "../assets/Ai.jpg";
 import BlockChain from "../assets/blockchain.jpeg";
 import webDev from "../assets/webdev.jpg";
 import Cyber from "../assets/cybersecurity.jpg";
-import dataScience from "../assets/dataScience.jpg";
+import dataScience from "../assets/datascience.jpg";
 import cloud from "../assets/cloudcomputing.jpg";
 import software from "../assets/software.jpg";
 import devops from "../assets/devops.webp";
