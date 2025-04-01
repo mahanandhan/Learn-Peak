@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Python = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-12">
       {/* Main Title */}
@@ -16,7 +17,7 @@ const Python = () => {
           <p className="text-gray-300">
             Dive into Python programming with interactive coding exercises, live demos, and real-world examples.
           </p>
-          <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/pythonvl')} className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning
           </button>
         </div>
