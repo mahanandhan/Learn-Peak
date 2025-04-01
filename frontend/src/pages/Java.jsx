@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Java = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-12">
       {/* Main Title */}
@@ -16,7 +17,7 @@ const Java = () => {
           <p className="text-gray-300">
             Learn Java through visual-based tutorials, interactive coding challenges, and real-time debugging sessions.
           </p>
-          <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/javavl')} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning
           </button>
         </div>
