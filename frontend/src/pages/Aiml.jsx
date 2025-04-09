@@ -1,39 +1,51 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+
 const Aiml = () => {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen bg-gradient-to-r from-blue-50 via-blue-100 to-blue-200 text-gray-800 flex flex-col items-center justify-center px-6 py-12">
       {/* Main Title */}
-      <div className="mb-12">
-        <h1 className="text-5xl font-bold text-green-500">AI & Machine Learning</h1>
+      <div className="mb-12 text-center">
+        <h1 className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-4">
+          AI & Machine Learning
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-600 mb-8">
+          Explore the world of AI & ML with engaging, interactive lessons and hands-on experience.
+        </p>
       </div>
 
       {/* Sections */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-5xl">
         {/* Visual Learning Section */}
-        <div className="bg-gray-800 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-          <h1 className="text-3xl font-semibold text-yellow-400 mb-4">Visual Learning</h1>
-          <p className="text-gray-300">
-            Dive into AI and ML concepts with interactive visualizations, data models, and hands-on coding exercises.
+        <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 border border-gray-300">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-600 mb-4">Visual Learning</h2>
+          <p className="text-gray-600 text-lg mb-6">
+            Learn AI and ML concepts with visualizations that make the complex ideas simpler to grasp.
           </p>
-          <button onClick={() => navigate('/aimlvl')}  className="bg-green-500 hover:bg-green-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button
+            onClick={() => navigate('/aimlvl')}
+            className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white font-semibold py-3 px-6 rounded-lg mt-4 transition duration-300 transform hover:scale-105"
+          >
             Start Learning
           </button>
         </div>
 
         {/* Theoretical Learning Section */}
-        <div className="bg-gray-800 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-          <h1 className="text-3xl font-semibold text-orange-400 mb-4">Theoretical Learning</h1>
-          <p className="text-gray-300">
-            Understand the foundational theories of artificial intelligence, machine learning algorithms, and statistical methods.
+        <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 border border-gray-300">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-yellow-600 mb-4">Theoretical Learning</h2>
+          <p className="text-gray-600 text-lg mb-6">
+            Dive deeper into the foundational principles of machine learning algorithms and AI theories.
           </p>
-          <button className="bg-green-500 hover:bg-green-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button
+            className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold py-3 px-6 rounded-lg mt-4 transition duration-300 transform hover:scale-105"
+          >
             Start Learning
-            </button>
+          </button>
         </div>
       </div>
     </div>
   );
 };
+
 export default Aiml;
