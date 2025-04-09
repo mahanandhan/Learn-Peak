@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import coursesData from "../assets/data";
-import logoLearn from "../../src/assets/logolearn.jpg";
+import logoLearn from "../../src/assets/logoLearn.jpg";
 const Header = () => {
   const [courses, setCourses] = useState([]);
 
