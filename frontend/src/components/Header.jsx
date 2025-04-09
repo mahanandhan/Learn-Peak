@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import coursesData from "../assets/data";
-
+import logoLearn from "../assets/logolearn.jpg";
 const Header = () => {
   const [courses, setCourses] = useState([]);
 
@@ -13,6 +13,13 @@ const Header = () => {
     <section className="relative bg-gray-900 text-white min-h-screen flex flex-col justify-center items-center px-6 py-20">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
+
+       {/* Logo */}
+       <img
+        src={logoLearn}
+        alt="LearnPeak Logo"
+        className="w-32 md:w-40 lg:w-48 mb-8 z-10 rounded-xl shadow-lg"
+      />
 
       <div className="relative z-10 text-center w-full">
         <h1 className="text-6xl font-bold text-blue-500 mb-6">Explore Our Courses</h1>
