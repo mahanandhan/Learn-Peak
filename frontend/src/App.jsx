@@ -32,6 +32,8 @@ import CyberSecurityVl from './pages/vl/CyberSecurityVl'
 import DataScienceVl from './pages/vl/DataScienceVl'
 import UiUxVl from './pages/vl/UiUxVl'
 import ArVrVl from './pages/vl/ArVrVl'
+import GameDevelopmentVl from './pages/vl/GameDevelopmentVl'
+import MobileDev from './pages/vl/MobileDev'
 const App = () => {
   return (
     <div>
@@ -68,6 +70,8 @@ const App = () => {
         <Route path='/datasciencevl' element={<DataScienceVl />} />
         <Route path='/uiuxvl' element={<UiUxVl />} />
         <Route path='/arvrvl' element={<ArVrVl />} />
+        <Route path='/gamedevvl' element={<GameDevelopmentVl />} />
+        <Route path='/mobiledevVl' element={<MobileDev />} />
       </Routes>
     </div>
   )
