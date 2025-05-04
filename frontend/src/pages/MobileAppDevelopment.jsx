@@ -23,7 +23,7 @@ const MobileAppDevelopment = () => {
           </button>
         </div>
 
-        {/* Theoretical Learning Section */}
+        {/* Interview Prepqaration Section */}
         <div className="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
           <h1 className="text-3xl font-semibold text-yellow-500 mb-4">Interview Preparation</h1>
           <p className="text-gray-700">
