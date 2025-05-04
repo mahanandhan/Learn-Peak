@@ -33,9 +33,9 @@ const Blockchain = () => {
 
         {/* Theoretical Learning Section */}
         <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transform transition duration-300 hover:scale-105 border border-gray-200">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-600 mb-4">Theoretical Learning</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-600 mb-4">Interview Preperation</h2>
           <p className="text-gray-600 text-lg mb-6">
-            Build a strong foundation in blockchain fundamentals, cryptography, and decentralized applications (dApps).
+            Prepare for blockchain interviews with in-depth theoretical knowledge, practical scenarios, and coding challenges.
           </p>
           <button
             className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-lg mt-4 transition duration-300 transform hover:scale-105"

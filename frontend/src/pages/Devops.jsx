@@ -23,9 +23,9 @@ const Devops = () => {
 
         {/* Theoretical Learning Section */}
         <div className="bg-gray-800 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-          <h1 className="text-3xl font-semibold text-blue-400 mb-4">Theoretical Learning</h1>
+          <h1 className="text-3xl font-semibold text-blue-400 mb-4">Interview Preperation</h1>
           <p className="text-gray-300">
-            Gain in-depth knowledge of continuous integration, continuous delivery, and automation.
+            Prepare for DevOps interviews with in-depth theoretical knowledge and practical scenarios.
           </p>
           <button className="bg-blue-400 hover:bg-blue-500 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning

@@ -1,35 +1,40 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const DataScience = () => {
+  const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen bg-gradient-to-r from-teal-400 via-white to-purple-600 text-white flex flex-col items-center justify-center px-6 py-16">
       {/* Main Title */}
-      <div className="mb-12">
-        <h1 className="text-5xl font-bold text-teal-400">Data Science</h1>
+      <div className="mb-12 text-center">
+        <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500">
+          Data Science
+        </h1>
+        <p className="text-gray-100 mt-2 text-lg">Choose your learning path</p>
       </div>
 
       {/* Sections */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl">
         {/* Visual Learning Section */}
-        <div className="bg-gray-800 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-          <h1 className="text-3xl font-semibold text-fuchsia-500 mb-4">Visual Learning</h1>
+        <div className="bg-white/10 p-8 rounded-2xl shadow-xl backdrop-blur-md hover:scale-[1.03] transition-all duration-300">
+          <h2 className="text-3xl font-bold text-fuchsia-400 mb-4">Visual Learning</h2>
           <p className="text-gray-300">
             Dive into data visualization techniques, learn how to interpret graphs, charts, and infographics effectively.
           </p>
-          <button className="bg-fuchsia-400 hover:bg-fuchsia-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/datasciencevl')} className="mt-6 bg-fuchsia-500 hover:bg-fuchsia-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
             Start Learning
-            </button>
+          </button>
         </div>
 
-        {/* Theoretical Learning Section */}
-        <div className="bg-gray-800 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-          <h1 className="text-3xl font-semibold text-lime-400 mb-4">Theoretical Learning</h1>
+        {/* Interview Preparation Section */}
+        <div className="bg-white/10 p-8 rounded-2xl shadow-xl backdrop-blur-md hover:scale-[1.03] transition-all duration-300">
+          <h2 className="text-3xl font-bold text-lime-400 mb-4">Interview Preparation</h2>
           <p className="text-gray-300">
-            Master statistical analysis, machine learning algorithms, and data modeling principles with a strong theoretical foundation.
+            Prepare for data science interviews with in-depth theoretical knowledge and practical scenarios.
           </p>
-          <button className="bg-lime-400 hover:bg-lime-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button className="mt-6 bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
             Start Learning
-            </button>
+          </button>
         </div>
       </div>
     </div>

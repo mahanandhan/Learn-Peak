@@ -1,7 +1,9 @@
 import React from 'react';
 import '../pages/css/CyberSecurity.css'; // We'll add custom styles here
+import { useNavigate } from 'react-router-dom';
 
 const CyberSecurity = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 text-white flex flex-col items-center justify-center px-6 py-12 overflow-hidden">
       {/* Animated Background Blobs */}
@@ -28,15 +30,15 @@ const CyberSecurity = () => {
             <p className="text-white/80 mb-4">
               Learn cybersecurity through engaging visuals, hands-on simulations, and real-world case studies.
             </p>
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-6 rounded-xl transition duration-300 shadow-md">
+            <button onClick={() => navigate('/cybersecurityvl')} className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-6 rounded-xl transition duration-300 shadow-md">
               Start Learning
             </button>
           </div>
 
           <div className="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-xl transform transition duration-300 hover:scale-105">
-            <h2 className="text-3xl font-bold text-yellow-300 mb-4">Theoretical Learning</h2>
+            <h2 className="text-3xl font-bold text-yellow-300 mb-4">interview preperation</h2>
             <p className="text-white/80 mb-4">
-              Understand cybersecurity fundamentals including cryptography, network defense, and risk analysis.
+              Prepare for cybersecurity interviews with in-depth theoretical knowledge and practical scenarios.
             </p>
             <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-6 rounded-xl transition duration-300 shadow-md">
               Start Learning

@@ -28,6 +28,10 @@ import WebDevVl from './pages/vl/WebDevVl'
 import BlockchainVl from './pages/vl/BlockchainVl'
 import PythonVl from './pages/vl/PythonVl'
 import JavaVl from './pages/vl/JavaVl'
+import CyberSecurityVl from './pages/vl/CyberSecurityVl'
+import DataScienceVl from './pages/vl/DataScienceVl'
+import UiUxVl from './pages/vl/UiUxVl'
+import ArVrVl from './pages/vl/ArVrVl'
 const App = () => {
   return (
     <div>
@@ -60,6 +64,10 @@ const App = () => {
         <Route path='/blockchainvl' element={<BlockchainVl />} />
         <Route path='/pythonvl' element={<PythonVl />} />
         <Route path='/javavl' element={<JavaVl />} />
+        <Route path='/cybersecurityvl' element={<CyberSecurityVl />} />
+        <Route path='/datasciencevl' element={<DataScienceVl />} />
+        <Route path='/uiuxvl' element={<UiUxVl />} />
+        <Route path='/arvrvl' element={<ArVrVl />} />
       </Routes>
     </div>
   )

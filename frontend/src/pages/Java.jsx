@@ -24,9 +24,9 @@ const Java = () => {
 
         {/* Theoretical Learning Section */}
         <div className="bg-gray-800 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-          <h1 className="text-3xl font-semibold text-teal-400 mb-4">Theoretical Learning</h1>
+          <h1 className="text-3xl font-semibold text-teal-400 mb-4">Interview Preperation</h1>
           <p className="text-gray-300">
-            Explore in-depth concepts such as Java syntax, object-oriented programming, data structures, and algorithms.
+            Prepare for Java interviews with in-depth theoretical knowledge.
           </p>
           <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning

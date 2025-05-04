@@ -1,33 +1,40 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const UiUx = () => {
+  const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-300 text-white flex flex-col items-center justify-center px-6 py-16">
+      
       {/* Main Title */}
-      <div className="mb-12">
-        <h1 className="text-5xl font-bold text-purple-500">UI/UX Design</h1>
+      <div className="mb-12 text-center">
+        <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400">
+          UI/UX Design
+        </h1>
+        <p className="text-gray-800 mt-2 text-lg font-medium">Design stunning and user-friendly interfaces</p>
       </div>
 
       {/* Sections */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl">
+        
         {/* Visual Learning Section */}
-        <div className="bg-gray-800 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-          <h1 className="text-3xl font-semibold text-pink-400 mb-4">Visual Learning</h1>
-          <p className="text-gray-300">
+        <div className="bg-gradient-to-br from-pink-400 to-fuchsia-600 p-8 rounded-2xl shadow-2xl hover:scale-[1.03] transition-all duration-300">
+          <h2 className="text-3xl font-bold text-white mb-4">Visual Learning</h2>
+          <p className="text-white/90">
             Learn how to create beautiful and user-friendly interfaces, focusing on visual design principles and prototyping tools.
           </p>
-          <button className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/uiuxvl')} className="mt-6 bg-white text-pink-700 font-bold py-2 px-6 rounded-full hover:bg-pink-100 transition">
             Start Learning
           </button>
         </div>
 
-        {/* Theoretical Learning Section */}
-        <div className="bg-gray-800 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-          <h1 className="text-3xl font-semibold text-yellow-400 mb-4">Theoretical Learning</h1>
-          <p className="text-gray-300">
-            Dive deep into the theories behind user behavior, user research, and usability to create intuitive and impactful designs.
+        {/* Interview Preparation Section */}
+        <div className="bg-gradient-to-br from-yellow-300 to-yellow-500 p-8 rounded-2xl shadow-2xl hover:scale-[1.03] transition-all duration-300">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Interview Preparation</h2>
+          <p className="text-gray-900/80">
+            Prepare for UI/UX interviews with in-depth theoretical knowledge and practical scenarios.
           </p>
-          <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button className="mt-6 bg-white text-yellow-600 font-bold py-2 px-6 rounded-full hover:bg-yellow-100 transition">
             Start Learning
           </button>
         </div>

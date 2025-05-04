@@ -40,16 +40,8 @@ const coursesData = [
       "image": dataScience
     },
     {
-      "name": "Cloud Computing",
-      "image": cloud
-    },
-    {
       "name": "Software Engineering",
       "image": software
-    },
-    {
-      "name": "DevOps",
-      "image": devops
     },
     {
       "name": "Mobile App Development",
@@ -63,33 +55,10 @@ const coursesData = [
       "name": "UI/UX Design",
       "image": uiux
     },
-    {
-      "name": "Embedded Systems",
-      "image": embedded
-    },
-    {
-      "name": "IoT (Internet of Things)",
-      "image": iot
-    },
-    {
-      "name": "Big Data Analytics",
-      "image": bigdata
-    },
+    
     {
       "name": "AR/VR Development",
       "image": arvr
-    },
-    {
-      "name": "Software Testing & QA",
-      "image": test
-    },
-    {
-      "name": "Ethical Hacking",
-      "image": hacking
-    },
-    {
-      "name": "Full-Stack Development",
-      "image": developer
     },
     {
       "name": "Python Programming",
