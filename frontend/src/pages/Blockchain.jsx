@@ -38,6 +38,7 @@ const Blockchain = () => {
             Prepare for blockchain interviews with in-depth theoretical knowledge, practical scenarios, and coding challenges.
           </p>
           <button
+            onClick={() => navigate('/blockchainiq')}
             className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-lg mt-4 transition duration-300 transform hover:scale-105"
           >
             Start Learning

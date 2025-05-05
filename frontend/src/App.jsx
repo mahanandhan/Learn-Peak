@@ -34,6 +34,9 @@ import UiUxVl from './pages/vl/UiUxVl'
 import ArVrVl from './pages/vl/ArVrVl'
 import GameDevelopmentVl from './pages/vl/GameDevelopmentVl'
 import MobileDev from './pages/vl/MobileDev'
+import AimlIq from './pages/interview/AimlIq'
+import BlockchainIq from './pages/interview/BlockchainIq'
+import WebdevIq from './pages/interview/WebdevIq'
 const App = () => {
   return (
     <div>
@@ -72,6 +75,9 @@ const App = () => {
         <Route path='/arvrvl' element={<ArVrVl />} />
         <Route path='/gamedevvl' element={<GameDevelopmentVl />} />
         <Route path='/mobiledevVl' element={<MobileDev />} />
+        <Route path='/aimliq' element={<AimlIq />} />
+        <Route path='/blockchainiq' element={<BlockchainIq />} />
+        <Route path='/webdeviq' element={<WebdevIq />} />
       </Routes>
     </div>
   )

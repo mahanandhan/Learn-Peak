@@ -38,6 +38,7 @@ const Aiml = () => {
             Dive deeper into the foundational principles of machine learning algorithms and AI theories.
           </p>
           <button
+          onClick={() => navigate('/aimliq')}
             className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold py-3 px-6 rounded-lg mt-4 transition duration-300 transform hover:scale-105"
           >
             Start Learning

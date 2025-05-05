@@ -33,7 +33,9 @@ const WebDevelopment = () => {
           <p className="text-gray-600">
             Prepare for web development interviews with in-depth theoretical knowledge and practical scenarios.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button 
+            onClick={() => navigate('/webdeviq')} 
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning
           </button>
         </div>
