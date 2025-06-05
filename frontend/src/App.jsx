@@ -37,6 +37,15 @@ import MobileDev from './pages/vl/MobileDev'
 import AimlIq from './pages/interview/AimlIq'
 import BlockchainIq from './pages/interview/BlockchainIq'
 import WebdevIq from './pages/interview/WebdevIq'
+import CyberSecurityIq from './pages/interview/CyberSecurityIq'
+import DataScienceIq from './pages/interview/DataScienceIq'
+import MobileAppDevelopmentIq from './pages/interview/MobileAppDevelopmentIq'
+import GameDevelopmentIq from './pages/interview/GameDevelopmentIq'
+import UiUxIq from './pages/interview/Ui-UxIq'
+import ArVrIq from './pages/interview/ArVrIq'
+import PythonIq from './pages/interview/PythonIq'
+import JavaIq from './pages/interview/JavaIq'
+import About from './pages/About'
 const App = () => {
   return (
     <div>
@@ -78,6 +87,15 @@ const App = () => {
         <Route path='/aimliq' element={<AimlIq />} />
         <Route path='/blockchainiq' element={<BlockchainIq />} />
         <Route path='/webdeviq' element={<WebdevIq />} />
+        <Route path='/CyberSecurityIq' element={<CyberSecurityIq />} />
+        <Route path='/DataScienceIq' element={<DataScienceIq />} />
+        <Route path='MobileAppDevelopmentIq' element={<MobileAppDevelopmentIq />} />
+        <Route path='/GameDevelopmentIq' element={<GameDevelopmentIq />} />
+        <Route path='/UiUxIq' element={<UiUxIq />} />
+        <Route path='/ArVrIq' element={<ArVrIq />} />
+        <Route path='/pythonIq' element={<PythonIq />} />
+        <Route path='/javaiq' element={<JavaIq />} />
+        <Route path='about' element={<About />} />
       </Routes>
     </div>
   )

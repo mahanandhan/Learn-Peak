@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
 
         {/* Center - Navigation Links */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-8">
+        <div className="absolute right-3 transform -translate-x-1/2 flex gap-8">
           <Link
             to="/home"
             className="text-lg font-medium text-gray-200 hover:text-white transition-all duration-300 hover:scale-110"
@@ -29,17 +29,17 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link
+          {/* <Link
             to="/contact"
             className="text-lg font-medium text-gray-200 hover:text-white transition-all duration-300 hover:scale-110"
           >
             Contact
-          </Link>
+          </Link> */}
         </div>
 
         {/* Right Side - Other Links */}
         <div className="flex gap-6 flex-1 justify-end">
-          <Link
+          {/* <Link
             to="/signup"
             className="text-lg font-medium text-gray-200 hover:text-white transition-all duration-300 hover:scale-110"
           >
@@ -50,10 +50,10 @@ const Navbar = () => {
             className="text-lg font-medium text-gray-200 hover:text-white transition-all duration-300 hover:scale-110"
           >
             Login
-          </Link>
+          </Link> */}
 
           {/* Conditionally display Profile and Logout */}
-          <div className="flex gap-6">
+          {/* <div className="flex gap-6">
             <Link
               to="/profile"
               className="text-lg font-medium text-gray-200 hover:text-white transition-all duration-300 hover:scale-110"
@@ -66,7 +66,7 @@ const Navbar = () => {
             >
               Logout
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

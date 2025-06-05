@@ -29,7 +29,7 @@ const GameDevelopment = () => {
           <p className="text-gray-700">
             Prepare for game development interviews with in-depth theoretical knowledge and practical scenarios.
           </p>
-          <button className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/GameDevelopmentIq')} className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning
           </button>
         </div>

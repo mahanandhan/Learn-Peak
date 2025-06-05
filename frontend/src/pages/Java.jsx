@@ -28,7 +28,7 @@ const Java = () => {
           <p className="text-gray-300">
             Prepare for Java interviews with in-depth theoretical knowledge.
           </p>
-          <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/javaIq')} className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning
           </button>
         </div>

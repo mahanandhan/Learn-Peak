@@ -32,7 +32,7 @@ const DataScience = () => {
           <p className="text-gray-300">
             Prepare for data science interviews with in-depth theoretical knowledge and practical scenarios.
           </p>
-          <button className="mt-6 bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+          <button onClick={() => {navigate('/DataScienceIq')}} className="mt-6 bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
             Start Learning
           </button>
         </div>

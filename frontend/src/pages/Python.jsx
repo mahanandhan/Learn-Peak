@@ -28,7 +28,7 @@ const Python = () => {
           <p className="text-gray-300">
             Learn the foundational concepts of Python, from variables and data types to object-oriented programming and advanced topics.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/pythonIq')} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning
           </button>
         </div>

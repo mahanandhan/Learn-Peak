@@ -29,7 +29,7 @@ const MobileAppDevelopment = () => {
           <p className="text-gray-700">
             Prepare for mobile app development interviews with in-depth theoretical knowledge and practical scenarios.
           </p>
-          <button className="bg-yellow-500 hover:bg-yellow-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
+          <button onClick={() => navigate('/MobileAppDevelopmentIq')} className="bg-yellow-500 hover:bg-yellow-700 transform transition duration-300 text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer">
             Start Learning
           </button>
         </div>

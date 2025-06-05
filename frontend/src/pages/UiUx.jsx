@@ -34,7 +34,7 @@ const UiUx = () => {
           <p className="text-gray-900/80">
             Prepare for UI/UX interviews with in-depth theoretical knowledge and practical scenarios.
           </p>
-          <button className="mt-6 bg-white text-yellow-600 font-bold py-2 px-6 rounded-full hover:bg-yellow-100 transition">
+          <button onClick={() => navigate('/UiUxIq')} className="mt-6 bg-white text-yellow-600 font-bold py-2 px-6 rounded-full hover:bg-yellow-100 transition">
             Start Learning
           </button>
         </div>

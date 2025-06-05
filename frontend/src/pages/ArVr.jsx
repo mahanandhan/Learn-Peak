@@ -34,7 +34,7 @@ const ArVr = () => {
           <p className="text-gray-900/80">
             Prepare for AR/VR interviews with in-depth theoretical knowledge and practical scenarios, covering the latest technologies and trends.
           </p>
-          <button className="mt-6 bg-white text-green-700 font-bold py-2 px-6 rounded-full hover:bg-green-100 transition">
+          <button onClick={() => navigate('/ArVrIq')} className="mt-6 bg-white text-green-700 font-bold py-2 px-6 rounded-full hover:bg-green-100 transition">
             Start Learning
           </button>
         </div>

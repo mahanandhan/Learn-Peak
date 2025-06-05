@@ -40,7 +40,7 @@ const CyberSecurity = () => {
             <p className="text-white/80 mb-4">
               Prepare for cybersecurity interviews with in-depth theoretical knowledge and practical scenarios.
             </p>
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-6 rounded-xl transition duration-300 shadow-md">
+            <button onClick={() => navigate('/CyberSecurityIq')} className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-6 rounded-xl transition duration-300 shadow-md">
               Start Learning
             </button>
           </div>

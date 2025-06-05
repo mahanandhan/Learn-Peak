@@ -24,7 +24,7 @@ const Footer = () => {
           <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-all duration-300">
             About
           </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-all duration-300">
+          {/* <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-all duration-300">
             Contact
           </Link>
           <Link to="/privacy" className="text-gray-700 hover:text-blue-600 transition-all duration-300">
@@ -32,11 +32,11 @@ const Footer = () => {
           </Link>
           <Link to="/terms" className="text-gray-700 hover:text-blue-600 transition-all duration-300">
             Terms
-          </Link>
+          </Link> */}
         </div>
 
         {/* Right - Social Media Links */}
-        <div className="flex gap-6 mt-6 md:mt-0 text-gray-700">
+        {/* <div className="flex gap-6 mt-6 md:mt-0 text-gray-700">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <Instagram size={28} className="text-gray-600 hover:text-pink-500 transition-all duration-300" />
           </a>
@@ -49,7 +49,7 @@ const Footer = () => {
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <Linkedin size={28} className="text-gray-600 hover:text-blue-700 transition-all duration-300" />
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Bottom - Copyright */}
