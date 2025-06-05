@@ -56,6 +56,7 @@ const Footer = () => {
       <div className="text-center text-gray-500 text-lg mt-8">
         &copy; {new Date().getFullYear()} Elearn Platform. All Rights Reserved.
       </div>
+      <h1 className="text-center text-blue-500 text-lg mt-8">By Narayanam Mahanandhan</h1>
     </footer>
   );
 };
