@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elearning-platform-zksp.vercel.app/sitemap.xml
