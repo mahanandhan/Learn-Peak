@@ -40,19 +40,17 @@ const Header = () => {
               <img
                 src={course.image}
                 alt={course.name}
-                className="w-full h-52 object-cover transform transition duration-300 ease-in-out hover:opacity-80"
+                className="w-full h-52 object-cover transition duration-300 ease-in-out hover:opacity-80"
               />
-              <div className="p-6 text-center bg-gradient-to-r from-teal-200 via-blue-200 to-indigo-200">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                  <Link
-                    to={`/${course.name.toLowerCase().replace(/\s+/g, '')}`}
-                    state={course}
-                    className="inline-block text-xl text-gray-800 hover:text-indigo-600 transition duration-300"
-                  >
-                    {course.name}
-                  </Link>
-                </h3>
-                <p className="text-gray-600 text-sm">{course.description}</p>
+              <div className="p-6 text-center bg-gradient-to-r from-teal-200 via-blue-200 to-indigo-200 flex flex-col justify-between h-full">
+                <Link
+                  to={`/${course.name.toLowerCase().replace(/\s+/g, '')}`}
+                  state={course}
+                  className="inline-block text-lg font-medium text-white bg-indigo-600 px-5 py-2 rounded-full shadow-md hover:bg-white hover:text-indigo-700 border border-indigo-600 transition duration-300 mb-3"
+                >
+                  {course.name}
+                </Link>
+                <p className="text-gray-700 text-sm">{course.description}</p>
               </div>
             </div>
           ))}
