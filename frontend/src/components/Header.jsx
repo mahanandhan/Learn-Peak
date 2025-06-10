@@ -29,6 +29,7 @@ const Header = () => {
         <p className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
           Unlock your potential with expert-led courses in AI, Blockchain, Web Development, and more!
         </p>
+        <h3 className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto mb-12 leading-relaxed border border-gray-300 bg-red-500 p-1 rounded-2xl hover:scale-105 duration-300 shadow-2xl ">We are going to implement the few more courses and the roadmap section</h3>
 
         {/* Courses Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 w-full max-w-7xl mx-auto">

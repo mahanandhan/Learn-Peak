@@ -27,6 +27,8 @@ const About = () => {
       <p className="mb-4 text-lg italic text-center">
         Join LearnPeak today and take your skills to the next level!
       </p>
+      <h1 className='text-2xl font-bold mb-6 text-indigo-700 text-center'>Founder: Narayanam Mahanandhan</h1>
+      <h3 className='text-lg display flex justify-center gap-2'>Linkedin profile: <a className='text-blue-600 hover:text-blue-400' href="https://www.linkedin.com/in/mahanandhan/" target="_blank">https://www.linkedin.com/in/mahanandhan/</a></h3>
     </div>
   );
 };

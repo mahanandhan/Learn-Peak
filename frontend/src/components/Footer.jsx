@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"; // ✅ Import Icons
-
+import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="relative bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 py-16 mt-12 shadow-xl rounded-t-xl">
@@ -50,6 +50,7 @@ const Footer = () => {
             <Linkedin size={28} className="text-gray-600 hover:text-blue-700 transition-all duration-300" />
           </a>
         </div> */}
+        
       </div>
 
       {/* Bottom - Copyright */}
