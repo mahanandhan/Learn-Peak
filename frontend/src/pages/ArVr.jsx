@@ -14,7 +14,7 @@ const ArVr = () => {
         <meta name="description" content="Explore immersive AR/VR learning with interactive simulations and interview preparation." />
         <meta name="keywords" content="AR, VR, development, immersive learning, interview questions, LearnPeak" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://elearning-platform-zksp.vercel.app/arvr" />
+        <link rel="canonical" href="https://elearning-platform-zksp.vercel.app/ar-vr" />
       </Helmet>
 
       {/* Main Title */}

@@ -57,7 +57,7 @@ const coursesData = [
     },
     
     {
-      "name": "AR/VR Development",
+      "name": "AR-VR Development",
       "image": arvr
     },
     {

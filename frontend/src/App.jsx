@@ -66,7 +66,7 @@ const App = () => {
         <Route path='/embeddedsystems' element={<EmbeddedSystem />} />
         <Route path='/iot(internetofthings)' element={<Iot />} />
         <Route path='/bigdataanalytics' element={<DataAnalysis />} />
-        <Route path='/ar/vrdevelopment' element={<ArVr />} />
+        <Route path='/ar-vrdevelopment' element={<ArVr />} />
         <Route path='/softwaretesting&qa' element={<SoftwareTesting />} />
         <Route path='/ethicalhacking' element={<EthicalHacking />} />
         <Route path='/full-stackdevelopment' element={<FullStack />} />
