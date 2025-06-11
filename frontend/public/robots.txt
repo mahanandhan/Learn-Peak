@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /public/
+Allow: /
 Disallow: /sitemap_new.xml
-Sitemap: https://elearning-platform-zksp.vercel.app/sitemap.xml
+Sitemap: https://elearning-platform-zksp.vercel.app/sitemap_new.xml
