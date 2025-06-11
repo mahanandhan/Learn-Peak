@@ -1,11 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 
 const ArVr = () => {
   const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-purple-200 to-pink-300 text-white flex flex-col items-center justify-center px-6 py-16">
-      
+
+      {/* ✅ Helmet for SEO */}
+      <Helmet>
+        <title>AR/VR Development | LearnPeak</title>
+        <meta name="description" content="Explore immersive AR/VR learning with interactive simulations and interview preparation." />
+        <meta name="keywords" content="AR, VR, development, immersive learning, interview questions, LearnPeak" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://elearning-platform-zksp.vercel.app/arvr" />
+      </Helmet>
+
       {/* Main Title */}
       <div className="mb-12 text-center">
         <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-orange-500 to-pink-600">
@@ -16,7 +27,7 @@ const ArVr = () => {
 
       {/* Sections */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl">
-        
+
         {/* Visual Learning Section */}
         <div className="bg-gradient-to-br from-pink-400 to-fuchsia-600 p-8 rounded-2xl shadow-2xl hover:scale-[1.03] transition-all duration-300">
           <h2 className="text-3xl font-bold text-white mb-4">Visual Learning</h2>
