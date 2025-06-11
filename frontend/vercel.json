@@ -1,5 +1,14 @@
 {
     "rewrites": [
       { "source": "/(.*)", "destination": "/" }
-    ]
-  }
+    ],
+    "routes": [
+    {
+      "src": "/sitemap.xml",
+      "headers": {
+        "Content-Type": "application/xml"
+      },
+      "dest": "/sitemap.xml"
+    }
+  ]
+}
