@@ -55,7 +55,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/webdevelopment" element={<WebDevelopment />} />
         <Route path='/cybersecurity' element={<CyberSecurity />} />
-        <Route path='/ai&machinelearning' element={<Aiml />} />
+        <Route path='/ai-machinelearning' element={<Aiml />} />
         <Route path='/blockchain' element={<Blockchain />} />
         <Route path='/datascience' element={<DataScience />} />
         <Route path='/cloudcomputing' element={<CloudComputing />} />

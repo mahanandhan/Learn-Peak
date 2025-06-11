@@ -20,7 +20,7 @@ import python from "../assets/pythonlearnpeakimg.jpg";
 import java from "../assets/javalearnpeakimg.jpeg";
 const coursesData = [
     {
-      "name": "AI & Machine Learning",
+      "name": "AI - Machine Learning",
       "image": AiImage
     },
     {
