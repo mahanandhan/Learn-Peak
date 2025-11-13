@@ -5,7 +5,9 @@ import Header from './Header'
 
 const Main = () => {
   return (
+    
     <div className="flex flex-col min-h-screen bg-gradient-to-r from-pink-100 via-yellow-100 to-green-100 text-gray-800">
+      
       {/* Navbar */}
       <Navbar />
 
