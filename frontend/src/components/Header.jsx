@@ -59,11 +59,13 @@ const CarouselArrowIcon = ({ direction, onClick }) => (
 
 
 const Sidebar = ({ isOpen, toggleSidebar }) => (
-    // Responsive Sidebar: Hidden on small screens, shown/full-width on md:
-    <div className={`fixed inset-y-0 left-0 z-50 transform 
-      ${isOpen ? 'translate-x-0 w-64' : '-translate-x-full w-0'} 
-      md:relative md:translate-x-0 md:w-20 
-      bg-gray-900 h-full flex flex-col items-center py-6 border-r border-gray-800 transition-all duration-300 ease-in-out`}>
+    // FIX 1: Ensure sidebar is fixed, hidden off-screen by default, and visible on md: screens.
+    // Added 'h-full' and 'w-64' for mobile size. Added 'md:block' to ensure it's always block on desktop.
+    <div className={`fixed inset-y-0 left-0 z-50 transform 
+      ${isOpen ? 'translate-x-0 w-64' : '-translate-x-full w-64'} 
+      md:relative md:translate-x-0 md:w-20 md:block 
+      bg-gray-900 h-full flex flex-col items-center py-6 border-r border-gray-800 transition-all duration-300 ease-in-out`}>
+    
     {/* Logo Area - REPLACED 'H' WITH IMAGE */}
     <div className="mb-10 p-2">
       <img 
@@ -82,16 +84,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => (
       </Link>
       
       {/* Other Items (Red and Green) */}
-      {['#F43F5E', '#10B981'].map((color, index) => (
-        <div 
-          key={index}
-          className="p-3 rounded-xl text-gray-500 hover:text-white cursor-pointer"
-          style={{ boxShadow: `0 0 10px ${color}1A`, border: `1px solid ${color}33` }}
-        >
-          {/* Placeholder for other icons */}
-          <SettingsIcon className="w-6 h-6" />
-        </div>
-      ))}
+      
 
       {/* NEW: About Link (Blue) */}
       <Link 
@@ -110,10 +103,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => (
     </nav>
 
     {/* Footer Icons */}
-    <div className="mt-auto space-y-4">
+{/*     <div className="mt-auto space-y-4">
         <div className="text-gray-500 hover:text-white cursor-pointer">Profile</div> 
         <div className="text-gray-500 hover:text-white cursor-pointer">Guest</div>  
-    </div>
+    </div> */}
   </div>
 );
 
@@ -122,8 +115,8 @@ const DashboardLayout = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date()); 
   const courseGridRef = useRef(null); 
   const [currentFeatureIndex, setCurrentFeatureIndex] = useState(0); 
-    // NEW: State for mobile sidebar
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false); 
+    // NEW: State for mobile sidebar
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false); 
 
   useEffect(() => {
     setCourses(coursesData); 
@@ -191,16 +184,21 @@ const DashboardLayout = () => {
     }
   };
 
+  // Helper to toggle sidebar state
+  const toggleSidebar = () => setIsSidebarOpen(prev => !prev);
+
 
   return (
     // Main Container: Flex on desktop, block on mobile. Reduced padding.
     <div className="flex md:flex-row flex-col bg-black text-white min-h-screen p-2 md:p-4 overflow-hidden">
       
       {/* 1. Fixed Sidebar (Left) - Added toggleSidebar and isOpen prop */}
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
+      {/* FIX: Used 'toggleSidebar' helper function */}
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
-      {/* Mobile Overlay for Sidebar */}
-      {isSidebarOpen && <div className="fixed inset-0 bg-black/50 z-40 md:hidden" onClick={() => setIsSidebarOpen(false)}></div>}
+      {/* FIX 2: Mobile Overlay for Sidebar */}
+      {/* This element will cover the main content when the sidebar is open on small screens */}
+      {isSidebarOpen && <div className="fixed inset-0 bg-black/50 z-40 md:hidden" onClick={toggleSidebar}></div>}
 
       {/* 2. Main Content Area - Full width on mobile, taking remaining space on desktop */}
       <div className="flex-1 flex flex-col bg-[#141416] rounded-xl overflow-hidden shadow-2xl shadow-indigo-900/50">
@@ -208,13 +206,13 @@ const DashboardLayout = () => {
         {/* 2a. Top Navigation Bar - Added Mobile Menu Button */}
         <header className="flex justify-between items-center p-4 bg-gray-900 border-b border-gray-800">
           <div className="flex items-center space-x-4">
-            {/* Mobile Menu Button */}
-            <button 
-                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                className="text-gray-400 md:hidden hover:text-white"
-            >
-                <FaBars className="w-6 h-6" />
-            </button>
+            {/* FIX 3: Mobile Menu Button to open the sidebar. Hidden on desktop (md:hidden) */}
+            <button 
+                onClick={toggleSidebar}
+                className="text-gray-400 md:hidden hover:text-white"
+            >
+                <FaBars className="w-6 h-6" />
+            </button>
             <h1 className="text-xl font-semibold text-gray-300">Learn Peak</h1> 
             
             {/* Search Bar - Hidden on small screens */}
@@ -230,12 +228,12 @@ const DashboardLayout = () => {
           
           {/* User & Icons */}
           <div className="flex items-center space-x-4">
-            <div className="text-gray-400 hover:text-white cursor-pointer hidden sm:block">🔔</div>
-            <div className="text-gray-400 hover:text-white cursor-pointer hidden sm:block">⚙️</div>
+{/*             <div className="text-gray-400 hover:text-white cursor-pointer hidden sm:block">🔔</div>
+            <div className="text-gray-400 hover:text-white cursor-pointer hidden sm:block">⚙️</div> */}
             {/* User Avatar only on smaller screens */}
             <div className="flex items-center space-x-2 bg-gray-800 p-1 rounded-full cursor-pointer">
-              <img src="https://i.pravatar.cc/32?img=1" alt="User" className="w-8 h-8 rounded-full" />
-              <span className="text-sm font-medium text-gray-300 pr-2 hidden sm:block">Vinsez</span> 
+{/*               <img src="https://i.pravatar.cc/32?img=1" alt="User" className="w-8 h-8 rounded-full" />
+              <span className="text-sm font-medium text-gray-300 pr-2 hidden sm:block">Vinsez</span>  */}
             </div>
           </div>
         </header>
@@ -295,9 +293,13 @@ const DashboardLayout = () => {
                         >
                           View Details
                         </Link>
-                        <button className="bg-transparent text-gray-300 border border-gray-600 px-4 py-2 md:px-6 md:py-3 text-sm rounded-xl font-semibold hover:bg-gray-800 transition duration-300">
+                       <Link 
+                          to={`/${featuredCourse.name.toLowerCase().replace(/\s+/g, '')}`}
+                          state={featuredCourse}
+                          className="bg-transparent border border-gray-200  text-gray-100 px-4 py-2 md:px-6 md:py-3 text-sm rounded-xl font-semibold hover:bg-gray-200 hover:text-gray-900 transition duration-300 shadow-lg shadow-gray-900/30 flex items-center"
+                        >
                           Enroll Now
-                        </button>
+                        </Link>
                       </div>
                     </>
                   ) : (
