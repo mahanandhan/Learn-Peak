@@ -122,12 +122,12 @@ const Python = () => {
               </p>
 
               <div className="flex space-x-4">
-                <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 px-6 py-3 rounded-lg shadow-lg">
+                {/* <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 px-6 py-3 rounded-lg shadow-lg">
                   Preview
                 </button>
                 <button className="bg-white/20 border border-white/30 px-6 py-3 rounded-lg">
                   Review
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
